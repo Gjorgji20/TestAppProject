@@ -1,0 +1,35 @@
+<Clients>
+	<Client ID="1">
+	<Name>Ime1</Name>
+	<Addresses>
+		<Address Type="1">Address11</Address>
+		<Address Type="2">Address22</Address>
+	</Addresses>
+	<BirthDate>15.12.2022</BirthDate>
+	</Client>
+
+	<Client ID="2">
+	<Name>Ime2</Name>
+	<Addresses>
+		<Address Type="1">Address21</Address>
+		<Address Type="2">Address22</Address>
+	</Addresses>
+	<BirthDate>16.12.2022</BirthDate>
+	</Client>
+	<Client ID="3">
+	<Name>Ime3</Name>
+	<Addresses>
+		<Address Type="1">Address31</Address>
+		<Address Type="2">Address32</Address>
+	</Addresses>
+	<BirthDate>17.12.2022</BirthDate>
+	</Client>
+	<Client ID="4">
+	<Name>Ime4</Name>
+	<Addresses>
+		<Address Type="1">Address41</Address>
+		<Address Type="2">Address42</Address>
+	</Addresses>
+	<BirthDate>18.12.2022</BirthDate>
+	</Client>
+</Clients>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="TestAppProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestAppProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Margin="10" Orientation="Vertical">
+        <StackPanel>
+            <Label HorizontalContentAlignment="Center" Foreground="Blue" FontSize="30" Content="Insert and Load clients from Db "/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding InsertCommand}" Width="300" Foreground="Blue" BorderBrush="Blue" Background="LightBlue" Margin="5" Height="70">Insert a new Clinet (Db)</Button>
+                <Button Command="{Binding LoadCommand}" Width="300" Foreground="Blue" BorderBrush="Blue"  Background="LightBlue" Margin="5" Height="70">Load all client (Db)</Button>
+            </StackPanel>
+        </StackPanel>
+
+
+        <StackPanel>
+            <Label HorizontalContentAlignment="Center" Foreground="Blue" FontSize="30" Content="Insert and Load clients with API"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding InsertApiCommand}" Width="300" Foreground="Blue" BorderBrush="Blue" Background="LightBlue" Margin="5" Height="70">Insert a new Clinet (Api)</Button>
+                <Button Command="{Binding LoadApiCommand}" Width="300" Foreground="Blue" BorderBrush="Blue"  Background="LightBlue" Margin="5" Height="70">Load all client (Api)</Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel>
+            <Label HorizontalContentAlignment="Center" Foreground="Blue" FontSize="30" Content="Export and Import"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding ImportClientsCommand}" Width="300" Foreground="Blue" BorderBrush="Blue" Background="LightBlue" Margin="5" Height="70">Import from XML</Button>
+                <Button Command="{Binding ExportClientsCommand}" Width="300" Foreground="Blue" BorderBrush="Blue"  Background="LightBlue" Margin="5" Height="70">Export in JSON file</Button>
+            </StackPanel>
+        </StackPanel>
+       
+    </StackPanel>
+</Window>

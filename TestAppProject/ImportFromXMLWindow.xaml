@@ -1,0 +1,22 @@
+﻿<Window x:Class="TestAppProject.ImportFromXMLWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestAppProject"
+        mc:Ignorable="d"
+        Title="ImportFromXMLWindow" Height="450" Width="800"
+        x:Name="importPg">
+    <Grid>
+        <Label HorizontalAlignment="Center" FontSize="30" Foreground="Blue" FontWeight="Bold">Load Clients from XML file</Label>
+        <DataGrid ItemsSource="{Binding Clients}" AutoGenerateColumns="False" IsReadOnly="True" Width="600" Height="300" HorizontalAlignment="Center" VerticalAlignment="Center" HeadersVisibility="Column" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Clien Name" Binding="{Binding Name}" Width="200"/>
+                <DataGridTextColumn Header="Clien Addresses" Binding="{Binding Address}" Width="200"/>
+                <DataGridTextColumn Header="Clien BirthDate" Binding="{Binding BirthDate}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="40" Width="150" Background="LightBlue" Foreground="Blue" Command="{Binding CloseCommand}" Margin="10">Back</Button>
+
+    </Grid>
+</Window>
